@@ -1,18 +1,21 @@
 #!/bin/bash
-echo "=== L’Aventure Bash: Secrets du Labyrinthe ==="
-echo "Créer un inventaire secret pour démarrer... (mkdir .armory)"
-read -p "Appuie sur Entrée après l'avoir créé, puis lance gardien.sh "
+echo "=== Aventure Unix ==="
+echo "Commence par créer ta cachette (mkdir .armory)."
+read -p "Appuie sur Entrée après avoir créé '.armory'... "
 bash gardien.sh
-cd crypte
-bash archiviste.sh
+cd cave
+bash start_cave.sh
+bash verif_cave.sh || exit 1
+cd ../crypte
+bash start_crypte.sh
+bash verif_crypte.sh || exit 1
 cd ../caves_temps
-bash echo.sh
+bash start_caves.sh
+bash verif_caves.sh || exit 1
 cd ../tour_horloge
-bash horloger.sh
+bash start_horloge.sh
+bash verif_horloge.sh || exit 1
 cd ../jardin_ombres
-bash bigboss.sh
-chmod +x *.sh gardien.sh
-chmod +x crypte/archiviste.sh
-chmod +x caves_temps/echo.sh
-chmod +x tour_horloge/horloger.sh
-chmod +x jardin_ombres/bigboss.sh
+bash start_boss.sh
+bash verif_boss.sh
+
