@@ -1,6 +1,6 @@
 #!/bin/bash
 
-MANU="coffre/manuscrit.txt"
+MANU="../coffre/manuscrit.txt"
 
 if [ -f "$MANU" ]; then
     if grep -qi "Le fragment de code est cinq" "$MANU"; then

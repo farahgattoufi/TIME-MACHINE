@@ -5,7 +5,7 @@ rm -rf bibliotheque/etagere bibliotheque/pile bibliotheque/coffre
 
 mkdir -p bibliotheque/etagere
 mkdir -p bibliotheque/pile
-mkdir -p bibliotheque/coffre
+
 
 # Livres avec faux codes, tous chiffrés en César 3
 echo "Oh Iudjphqw gh frgh hvw ghx" > bibliotheque/etagere/livreA.txt      # "Le fragment de code est deux"
@@ -23,7 +23,7 @@ gzip bibliotheque/pile/roman.txt
 
 
 # Manuscrit, vrai code en César 3 ("Le fragment de code est cinq")
-echo "Oh Iudjphqw gh frgh hvw flqj" > bibliotheque/etagere/manuscrit.txt # "Le fragment de code est cinq"
+echo "Oh iudjphqw gh frgh hvw flqt" > bibliotheque/etagere/manuscrit.txt # "Le fragment de code est cinq"
 gzip bibliotheque/etagere/manuscrit.txt
 chmod 000 bibliotheque/etagere/manuscrit.txt.gz
 

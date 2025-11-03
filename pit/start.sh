@@ -1,6 +1,15 @@
 #!/bin/bash
+
+# Prépare l’environnement en donnant l’exécution à tous les scripts .sh
+for f in *.sh; do
+  chmod +x "$f"
+done
+
 bash laboratoire/reset_labo.sh
 bash bibliotheque/reset_bib.sh
+bash atelier/reset_atelier.sh
+bash grenier/reset_grenier.sh
+rm -f ../jeu/nb_erreurs.txt
 
 echo "
 Bienvenue dans L’Aventure du Temps Égaré !
