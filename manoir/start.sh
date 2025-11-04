@@ -1,8 +1,8 @@
 #!/bin/bash
 
-rm -f .timer_start
+rm -f ../.timer_start
 # 1. Initialisation du chrono unique (créé UNE SEULE FOIS)
-echo $(date +%s) > .timer_start
+echo $(date +%s) > ../.timer_start
 
 # 2. Durée max du jeu en secondes (50 min)
 DUREE=180
@@ -33,7 +33,7 @@ rm -f ../jeu/nb_erreurs.txt
 
 echo "
 Bienvenue dans L’Aventure du Temps Égaré !
-Une machine interdite menace d’effacer la réalité dans 30 minutes.
+Une machine interdite menace d’effacer la réalité dans 50 minutes.
 Ta mission : explorer les différentes pièces mystérieuses du manoir pour en fin trouver la machine et l’arrêter avant qu’il ne soit trop tard.
 Attention certaines pièces sont piégées et tu sera pénaliser si tu y rentres ! 
 Tu collecteras un outil et tu relèveras un fragment du code d'arrêt de la machine tout au long de ton chemin.

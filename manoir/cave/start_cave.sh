@@ -1,6 +1,6 @@
 #!/bin/bash
 
-COMPTEUR="../jeu/nb_erreurs.txt"
+COMPTEUR="../../jeu/nb_erreurs.txt"
 NBMAX=3
 
 # Créer le dossier jeu si nécessaire

@@ -1,4 +1,4 @@
-Bienvenue dans l'escape Game : "Le Manoir et la Machine du Temps"
+Bienvenue dans "Le Manoir et la Machine du Temps"
 
 Plonge dans une aventure mystérieuse au cœur d’un vieux manoir, où chaque salle recèle des énigmes et des secrets oubliés.
 Quelque part dans ce manoir, une machine du temps menace de bouleverser la trame de l’histoire : le passé, le présent et l’avenir pourraient être inversés à jamais, provoquant un chaos irréversible.

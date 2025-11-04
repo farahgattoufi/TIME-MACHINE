@@ -1,6 +1,5 @@
 #!/bin/bash
-PORTEOUVERTE= "cadenas/cle.txt"
-if [ ! -f tableau1.png & -f "$PORTEOUVERTE" ] then
+if [ -f tableau1.png ] && [ -f "cadenas/cle.txt" ]; then
     echo "Bravo, tu as trouvé la machine cachée derrière le tableau."
     read -p "Entre le code d’arrêt (1 seule chance) : " answer
     if [ "$answer" == "3517" ]; then
