@@ -1,5 +1,5 @@
 #!/bin/bash
-DUREE=40
+DUREE=3000
 if [ ! -f "../.timer_start" ]; then
     echo "Le timer n'est pas initialisé."
     exit 1

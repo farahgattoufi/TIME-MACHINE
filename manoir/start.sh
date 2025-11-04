@@ -5,7 +5,7 @@ rm -f ../.timer_start
 echo $(date +%s) > ../.timer_start
 
 # 2. Durée max du jeu en secondes (50 min)
-DUREE=10
+DUREE=3000
 
 # 3. Timer automatique en arrière-plan
 (
