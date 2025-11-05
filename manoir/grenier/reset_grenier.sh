@@ -12,4 +12,4 @@ if [ -f ../coffre/box_de_lettres.tar.gz ]; then
     rm ../coffre/box_de_lettres.tar.gz
 fi
 
-echo "reset grenier done"
+

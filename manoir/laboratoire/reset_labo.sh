@@ -18,4 +18,3 @@ echo "Une balance électronique" > placard/balance.txt
 echo "Une pipette graduée" > placard/pipette.txt
 echo "Une clé rouillée" > tiroir/box/cle.txt    # Objet caché dans box/
 
-echo "reset labo done"

@@ -5,22 +5,24 @@ rm -f ../.timer_start
 echo $(date +%s) > ../.timer_start
 
 # 2. Durée max du jeu en secondes (50 min)
-DUREE=3000
+DUREE=10
 
 # 3. Timer automatique en arrière-plan
 (
     sleep $DUREE
-    # Vérifier si le timer existe encore (partie pas finie/victoire)
-    if [ -f ../.timer_start ]; then
-        echo -e "\n====================================="
-        echo "Temps écoulé !"
-        echo "La machine a bouleversé l'espace-temps, tu perds !"
-        echo "GAME OVER"
-        echo "====================================="
-        rm -f ../.timer_start
-        exit 1
-    fi
-    # Si .timer_start n'est plus là, c'est que la partie est finie (victoire/défaite manuelle),
+
+# Vérifier si le timer existe encore (victoire ou défaite)
+
+    echo -e "\n====================================="
+    echo "Temps écoulé !"
+    echo "La machine a bouleversé l'espace-temps, tu perds !"
+    echo "GAME OVER"
+    echo "====================================="
+    rm -f ../.timer_start
+    bash reset.sh
+    exit 1
+    
+    # Si .timer_start n'est plus là, c'est que la partie est finie
     # donc le timer ne fait rien.
 ) &
 

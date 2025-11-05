@@ -11,4 +11,4 @@ cp ../../backup/tableau1.png .
 cp ../../backup/tableau2.png .
 cp ../../backup/tableau3.png .
 
-echo "reset galerie done "
+

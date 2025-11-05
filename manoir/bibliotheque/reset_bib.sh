@@ -30,4 +30,3 @@ echo "qnic tse edoc ud tnemgarf eL" > etagere/manuscrit.txt # "Le fragment de co
 gzip etagere/manuscrit.txt
 chmod 000 etagere/manuscrit.txt.gz
 
-echo "reset bib done"

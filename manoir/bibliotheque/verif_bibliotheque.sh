@@ -4,7 +4,7 @@ MANU="../coffre/manuscrit.txt"
 
 
 if [ -f "$MANU" ]; then
-    if grep -qi "Le fragment de code est cinq" "$MANU"; then
+    if grep -qi "Le fragment du code est cinq" "$MANU"; then
         echo "Bravo, le manuscrit authentique est entre tes mains, et son vrai message est maintenant révélé."
         echo "Ta progression dans le manoir continue : Dans les hauteurs poussiéreuses du manoir, souvenirs et trésors s’accumulent."
         echo "Mais seuls les plus anciens veillent au-dessus de tout."

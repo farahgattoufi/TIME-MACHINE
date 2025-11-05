@@ -1,20 +1,24 @@
 #!/bin/bash
 if [ ! -f tableau1.png ] && [ -f "cadenas/cle.txt" ]; then
-    echo "Bravo, tu as trouvé la machine cachée derrière le tableau."
+    echo "Bravo, tu as trouvé la machine cachée derrière ce tableau."
     read -p "Entre le code d’arrêt (1 seule chance) : " answer
     if [ "$answer" == "3517" ]; then
-        echo "Bravo ! La machine s'arrête."
+        echo "BRAVO! La machine s'arrête."
         echo "Tu as gagné! : l’ordre du temps est restauré dans le manoir, et ton nom restera gravé dans la légende."
         bash ../time.sh
+        bash ../reset.sh
         
+
         
 
 
     else
-        rm -f ../.timer_start
-        echo "Oh non… Une brume étrange envahit la galerie."
-        echo "Le code était faux! La machine de temps n’a pas été arrêtée, et le passé comme le futur se brouillent irréversiblement."
+        echo "========  GAME OVER  ========"
+        echo "Oh non... Le code était FAUX ! La machine de temps n’a pas été arrêtée, et le passé comme le futur se brouillent irréversiblement."
         echo "Tente ta chance lors d’une nouvelle session avec start.sh"
+        bash ../time.sh
+        bash ../reset.sh
+        exit 1
         
         
 
