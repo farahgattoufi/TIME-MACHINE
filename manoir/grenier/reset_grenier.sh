@@ -1,4 +1,6 @@
 #!/bin/bash
+
+#remise a 0 de grenier 
 cd "$(dirname "$0")"
 
 # Met à jour la date de modification de chaque lettre (sans modifier leur contenu)

@@ -1,9 +1,12 @@
 #!/bin/bash
 
+#piece interdite =pénalisation 
+
+#l'existance de ce compteur = le joueur a deja commis une erreur avant
 COMPTEUR="../../.jeu/nb_erreurs.txt"
 NBMAX=2
 
-# Créer le dossier jeu si nécessaire
+# Créer le dossier jeu si nécessaire (s'il s'agit de la 1ere erreur commise)
 mkdir -p ../../.jeu
 
 # Initialiser ou incrémenter le compteur

@@ -1,4 +1,5 @@
 #!/bin/bash
+#calculer le temps écoulé
 cd "$(dirname "$0")"
 DUREE=3000
 if [ ! -f "../.timer_start" ]; then

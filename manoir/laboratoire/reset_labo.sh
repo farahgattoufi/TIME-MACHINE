@@ -1,4 +1,6 @@
 #!/bin/bash
+
+#remise a 0 de laboratoire
 cd "$(dirname "$0")"
 # Suppression de l'ancien coffre (dossier ou fichier)
 rm -rf ../coffre
