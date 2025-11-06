@@ -1,4 +1,4 @@
-Bienvenue dans au "Manoir"
+Bienvenue au "Manoir"
 
 Plonge dans une aventure mystérieuse au cœur d’un vieux manoir.
 Quelque part dans ce manoir, une machine de temps menace de bouleverser la trame de l’histoire provoquant un chaos irréversible.
